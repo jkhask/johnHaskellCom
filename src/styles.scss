@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Lato', sans-serif !important; background-color: #e0e0e0 !important;}
+
+.spacer { 
+    flex: 1 1 auto;
+}
+
+.mat-icon {
+    padding-bottom: 4px;
+}
+
+@import '~@angular/material/theming';
+$custom-typography: mat-typography-config(
+    $font-family: 'Lato'
+);
+
+@include angular-material-typography($custom-typography);
+
+$link-hover-decoration: none;    // remove underline from button links          // set link color based on the used material theme
+$link-hover-color: currentColor;
+@import '~bootstrap/scss/bootstrap-reboot';
+@import '~bootstrap/scss/bootstrap-grid';
+* {
+    &:active,
+    :focus {
+        outline: none !important;
+    }
+}
+  
+label {
+    margin-bottom: 0;
+}
