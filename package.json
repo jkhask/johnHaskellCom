@@ -12,7 +12,7 @@
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
     "build:client-and-server-bundles": "ng build --prod && ng run johnHaskellCom:server:production",
     "start": "npm run build:ssr && npm run serve:ssr",
-    "deploy": "npm run build:ssr && mv ./functions/dist/browser/index.html ./functions/dist/browser/index2.html && firebase deploy"
+    "deploy": "npm run build:ssr && cp -a dist/. functions/dist/ && mv ./functions/dist/browser/index.html ./functions/dist/browser/index2.html && firebase deploy"
   },
   "private": true,
   "dependencies": {

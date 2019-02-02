@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-export interface Skill {
+interface Skill {
   name: string;
   target: string;
 }
@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
       { name: 'Firebase', target: '' },
       { name: 'HTML', target: '' },
       { name: 'JavaScript', target: '' },
-      { name: 'MongoDB', target: '' },
+      { name: 'MongoDB', target: 'https://www.mongodb.com/what-is-mongodb' },
       { name: 'MySQL', target: '' },
       { name: 'Node', target: 'https://nodejs.org' },
       { name: 'PHP', target: '' },
