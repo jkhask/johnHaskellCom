@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {DomSanitizer} from '@angular/platform-browser';
+import {MatIconRegistry} from '@angular/material';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'johnHaskellCom';
+
+  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+    iconRegistry.addSvgIcon(
+      'home',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/img/icons/baseline-home-24px.svg'));
+    iconRegistry.addSvgIcon(
+      'person',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/img/icons/baseline-person-24px.svg'));
+  }
 }

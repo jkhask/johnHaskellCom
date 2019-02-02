@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
       { name: 'Agile', target: '' },
       { name: 'AngularJS', target: '' },
       { name: 'Angular', target: '' },
-      { name: 'ColdFusion (lol)', target: '' },
+      { name: 'ColdFusion', target: '' },
       { name: 'CSS3 / SCSS', target: '' },
       { name: 'Express', target: '' },
       { name: 'Firebase', target: '' },
