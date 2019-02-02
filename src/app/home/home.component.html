@@ -14,19 +14,7 @@
         <h4>Skills</h4>
         <mat-card-content>
           <mat-chip-list>
-            <mat-chip >Agile</mat-chip>
-            <mat-chip >AngularJS</mat-chip>
-            <mat-chip >Angular</mat-chip>
-            <mat-chip >CSS3/SCSS</mat-chip>
-            <mat-chip >Express</mat-chip>
-            <mat-chip >Firebase</mat-chip>
-            <mat-chip >HTML5</mat-chip>
-            <mat-chip >JavaScript</mat-chip>
-            <mat-chip >MongoDB</mat-chip>
-            <mat-chip >MySQL</mat-chip>
-            <mat-chip >Node</mat-chip>
-            <mat-chip >PHP</mat-chip>
-            <mat-chip >TypeScript</mat-chip>
+            <mat-chip (click)="openTarget(skill)" *ngFor="let skill of skills">{{skill.name}}</mat-chip>
           </mat-chip-list>
         </mat-card-content>
       </mat-card>

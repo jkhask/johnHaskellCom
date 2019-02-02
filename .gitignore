@@ -3,6 +3,7 @@
 # compiled output
 /dist
 /functions/dist
+/.firebase
 /tmp
 /out-tsc
 
