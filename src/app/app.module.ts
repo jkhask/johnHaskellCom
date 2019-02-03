@@ -8,6 +8,7 @@ import { MaterialModule } from './material/material.module';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { TransferHttpCacheModule } from '@nguniversal/common';
 import { environment } from '../environments/environment';
 
 @NgModule({
@@ -19,6 +20,7 @@ import { environment } from '../environments/environment';
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
+    TransferHttpCacheModule,
     BrowserAnimationsModule,
     MaterialModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
