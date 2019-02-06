@@ -1,7 +1,7 @@
 .intro-box {
     width: 100%;
     height: 400px;
-    background: url('../../assets/img/desk.webp');
+    // background-image: in main styles file to play nice with modernizer
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

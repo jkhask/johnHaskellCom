@@ -10,7 +10,7 @@
     "compile:server": "webpack --config webpack.server.config.js --progress --colors && tsc -p server.tsconfig.json",
     "serve:ssr": "node dist/server",
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
-    "build:client-and-server-bundles": "ng build --prod --output-hashing=none && ng run johnHaskellCom:server:production",
+    "build:client-and-server-bundles": "ng build --prod --output-hashing=bundles && ng run johnHaskellCom:server:production",
     "build:prerender": "npm run build:client-and-server-bundles && npm run compile:server && npm run generate:prerender",
     "generate:prerender": "cd dist && node prerender",
     "serve:prerender": "cd dist/browser && http-server",

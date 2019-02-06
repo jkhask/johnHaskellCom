@@ -16,5 +16,8 @@ export class AppComponent {
     iconRegistry.addSvgIcon(
       'person',
       sanitizer.bypassSecurityTrustResourceUrl('assets/img/icons/baseline-person-24px.svg'));
+    iconRegistry.addSvgIcon(
+      'music_note',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/img/icons/baseline-music_note-24px.svg'));
   }
 }

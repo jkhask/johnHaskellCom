@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
       { name: 'Angular', target: '' },
       { name: 'ColdFusion', target: '' },
       { name: 'CSS3 / SCSS', target: '' },
-      { name: 'Express', target: '' },
+      { name: 'Express', target: 'https://expressjs.com' },
       { name: 'Firebase', target: '' },
       { name: 'HTML', target: '' },
       { name: 'JavaScript', target: '' },
@@ -38,6 +38,14 @@ export class HomeComponent implements OnInit {
   openTarget(skill: Skill) {
     if (skill.target) {
       window.open(skill.target, '_blank');
+    }
+  }
+
+  openSocial(target: string) {
+    if (target === 'linkedin') {
+      window.open('https://www.linkedin.com/in/john-haskell-b7323591', '_blank');
+    } else if (target === 'github') {
+      window.open('https://github.com/jkhask', '_blank');
     }
   }
 
