@@ -19,5 +19,8 @@ export class AppComponent {
     iconRegistry.addSvgIcon(
       'music_note',
       sanitizer.bypassSecurityTrustResourceUrl('assets/img/icons/baseline-music_note-24px.svg'));
+    iconRegistry.addSvgIcon(
+      'chat',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/img/icons/baseline-chat-24px.svg'));
   }
 }

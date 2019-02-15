@@ -1,0 +1,19 @@
+.avatar-image {
+    background-size: cover;
+}
+
+.comments {
+    margin-top: 30px;
+    color: #707070;
+    .comment {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5px;
+    }
+}
+
+.mat-paginator {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}

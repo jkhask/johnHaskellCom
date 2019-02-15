@@ -6,6 +6,7 @@
 /.firebase
 /tmp
 /out-tsc
+/src/app/credentials.ts
 
 # dependencies
 /node_modules
