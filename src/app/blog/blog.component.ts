@@ -14,6 +14,7 @@ export class BlogComponent implements OnInit {
 
   posts$: Observable<any>;
   numPosts: number;
+  isLoaded = false;
 
   // MatPaginator Output
   pageEvent: PageEvent;
@@ -27,7 +28,10 @@ export class BlogComponent implements OnInit {
 
   ngOnInit() {
     this.posts$ = this.google.getPosts();
-    this.posts$.subscribe(posts => {this.numPosts = posts.length; });
+    this.posts$.subscribe(posts => {
+      this.numPosts = posts.length;
+      this.isLoaded = true;
+    });
   }
 
   getPaginatorData(event) {

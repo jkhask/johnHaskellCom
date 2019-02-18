@@ -18,20 +18,20 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.skills = [
-      { name: 'Agile', target: '' },
-      { name: 'AngularJS', target: '' },
-      { name: 'Angular', target: '' },
-      { name: 'ColdFusion', target: '' },
-      { name: 'CSS3 / SCSS', target: '' },
+      { name: 'Agile', target: 'https://en.wikipedia.org/wiki/Agile_software_development' },
+      { name: 'Angular', target: 'https://angular.io/' },
+      { name: 'ColdFusion', target: 'https://coldfusion.adobe.com/' },
+      { name: 'CSS3 / SCSS', target: 'https://sass-lang.com/' },
       { name: 'Express', target: 'https://expressjs.com' },
-      { name: 'Firebase', target: '' },
-      { name: 'HTML', target: '' },
-      { name: 'JavaScript', target: '' },
+      { name: 'Firebase', target: 'https://firebase.google.com/' },
+      { name: 'HTML', target: 'https://en.wikipedia.org/wiki/HTML' },
+      { name: 'JavaScript', target: 'https://en.wikipedia.org/wiki/JavaScript' },
       { name: 'MongoDB', target: 'https://www.mongodb.com/what-is-mongodb' },
-      { name: 'MySQL', target: '' },
+      { name: 'MySQL', target: 'https://www.mysql.com/' },
       { name: 'Node', target: 'https://nodejs.org' },
-      { name: 'PHP', target: '' },
-      { name: 'TypeScript', target: '' },
+      { name: 'PHP', target: 'http://www.php.net/' },
+      { name: 'TypeScript', target: 'https://www.typescriptlang.org/' },
+      { name: 'Wordpress', target: 'https://developer.wordpress.org/' },
     ];
   }
 

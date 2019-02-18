@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { MatButtonModule, MatToolbarModule, MatCardModule,
-  MatIconModule, MatChipsModule, MatPaginatorModule } from '@angular/material';
+  MatIconModule, MatChipsModule, MatPaginatorModule,
+  MatProgressBarModule } from '@angular/material';
 
-const components = [MatButtonModule, MatToolbarModule, MatCardModule,
+const mods = [MatButtonModule, MatToolbarModule, MatCardModule,
                     MatIconModule, MatChipsModule, HttpClientModule,
-                    MatPaginatorModule];
+                    MatPaginatorModule, MatProgressBarModule];
 @NgModule({
   declarations: [],
-  imports: components,
-  exports: components,
+  imports: mods,
+  exports: mods,
 })
 export class MaterialModule { }
